@@ -8,20 +8,27 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var answerLabel: UILabel!
+    
+    @IBAction func numbers(_ sender: UIButton) {
+        let inputNumber = sender.tag - 1
+        if answerLabel.text != nil {
+            if answerLabel.text == "0" {
+                answerLabel.text = "\(inputNumber)"
+            } else {
+                answerLabel.text = answerLabel.text! + "\(inputNumber)"
+            }
+        }
     }
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 
     override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-
-
-
+    
 }
