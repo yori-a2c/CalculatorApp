@@ -178,7 +178,6 @@
 				4F86D1CC79D64C5E04573104 /* Sources */,
 				4F86D74C6E48D4D3EDCE305D /* Frameworks */,
 				4F86D97C96E48C73E3C8818B /* Resources */,
-				748D426A8F162767EBA46690 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,24 +261,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		748D426A8F162767EBA46690 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Expression/Expression.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		840EF5E4BA51A1B886C6AB2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
