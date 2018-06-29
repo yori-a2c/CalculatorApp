@@ -26,16 +26,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
     
     @IBAction func numbers(_ sender: UIButton) {
-        let inputNumber = sender.tag - 1
+        let inputNumber = sender.titleLabel?.text
         if answerLabel.text != nil {
             if newCalculation == true {
-                answerLabel.text = "\(inputNumber)"
+                answerLabel.text = inputNumber
                 newCalculation = false
             } else {
                 if answerLabel.text == "0" || answerLabel.text == "+" || answerLabel.text == "-" || answerLabel.text == "×" || answerLabel.text == "÷" {
-                    answerLabel.text = "\(inputNumber)"
+                    answerLabel.text = inputNumber
                 } else {
-                    answerLabel.text = answerLabel.text! + "\(inputNumber)"
+                    answerLabel.text = answerLabel.text! + inputNumber!
                 }
             }
         }
